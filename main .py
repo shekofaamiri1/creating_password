@@ -1,7 +1,7 @@
 import random
 import string
-Lower = string. ascii_Lowercase
-Upper = string.ascii_Uppercase
+Lower = string.ascii_lowercase
+Upper = string.ascii_uppercase
 symbols = "!#@$%^&?:{}[]"
 numbers = "0123456789"
 all=Lower + Upper + symbols + numbers
@@ -13,7 +13,10 @@ while(True):
         password = "".join((random.sample(all, Length)))
         print(password)
         
-    
+    elif choice == "2":
+        break
+    else:
+        print("Your choice is wrong!\n")
     
 
 
